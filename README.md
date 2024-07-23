@@ -40,6 +40,7 @@ Here's a step-by-step guide to create an emulator application in C++ that simula
 ### 8. Run the Application
 ```bash
 ./main.exe
+```
 
 ## Server Setup Instructions
 
@@ -65,11 +66,11 @@ This server handles and stores data from the C++ emulator using Node.js with the
 4. **Test the Server**
    - Use tools like Postman or curl to test the API endpoints.
 
-## Frontend
+# Frontend
 
 To create a simple front-end interface using Flutter, we'll build an application that interacts with the Node.js server you previously set up. This app will allow users to start and stop the emulator, display the current status, and show the latest temperature and humidity readings.
 
-### Example Usage
+## Example Usage
 
 1. **Start the Emulator:**
    - Click the "Start Emulator" button to start the emulator on the server.
@@ -83,9 +84,18 @@ To create a simple front-end interface using Flutter, we'll build an application
 4. **View Current Status:**
    - The current status of the emulator (Running or Stopped) will be displayed at the top of the screen.
 
-### Step 1: Set Up Flutter Environment
+## Step 1: Set Up Flutter Environment
 
 - Follow the official Flutter installation guide to set up Flutter on your machine.
 - Confirm the installation with:
   ```bash
   flutter doctor
+
+## Step 2. Run the Flutter Application:
+```bash
+flutter run
+```
+## Running Instructions:
+
+- Ensure your Node.js server is running and accessible from the device where you are running the Flutter app. You might need to replace `http://localhost:3000` with the actual IP address of the server if you are running the Flutter app on a different device or emulator.
+- The `http` package is used for making HTTP requests to the Node.js server. Ensure your server endpoints are correctly configured to match the Flutter app's requests.
